@@ -42,13 +42,13 @@
 
 ## Current State
 
-- 현재 상태: Games 섹션에 playable snake game 1차 구현 반영 완료
-- 완료한 루프: 저장소 구조 확인, `AORR.md` 작성, Verifier 중심 TDD 루프 설계, 메모리 파일 작성, 기본 HTML 구조 초안 반영, Games 게임 UI/로직 1차 반영
-- 다음 루프: 모바일 제스처와 세부 UX 조정, 필요 시 게임 난이도/시각 보강
+- 현재 상태: Games 섹션에 playable Tetris 1차 구현 반영 완료
+- 완료한 루프: 저장소 구조 확인, `AORR.md` 작성, Verifier 중심 TDD 루프 설계, 메모리 파일 작성, 기본 HTML 구조 초안 반영, Games Tetris UI/로직 1차 반영
+- 다음 루프: 모바일 제스처와 세부 UX 조정, 필요 시 난이도/시각 보강
 - 현재 Retry 횟수: 0
 - 현재 오류 fingerprint: 없음
 - Blocker: 없음
-- 마지막 정상 상태: Games 섹션의 canvas, 버튼, 점수, 키보드 입력 연결이 정상 로드되는 상태
+- 마지막 정상 상태: Games 섹션의 canvas, 버튼, 점수, 라인, 키보드 입력 연결이 정상 로드되는 상태
 
 ## Guardrails
 
