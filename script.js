@@ -90,7 +90,7 @@
   let lines = 0;
   let level = 1;
   let bestScore = Number(window.localStorage.getItem(STORAGE_KEY) || 0);
-  let dropInterval = 600;
+  let dropInterval = 360;
   let timer = null;
   let running = false;
   let paused = false;
@@ -200,7 +200,7 @@
   };
 
   const updateSpeed = () => {
-    dropInterval = Math.max(120, 600 - (level - 1) * 42);
+    dropInterval = Math.max(90, 360 - (level - 1) * 32);
     if (running && timer) {
       window.clearInterval(timer);
       timer = window.setInterval(tick, dropInterval);
@@ -279,7 +279,7 @@
     score = 0;
     lines = 0;
     level = 1;
-    dropInterval = 600;
+    dropInterval = 360;
     running = false;
     paused = false;
     gameOver = false;
