@@ -159,15 +159,33 @@
       <section class="section shell" id="games">
         <div class="section-heading">
           <p class="eyebrow">Games</p>
-          <h2>Games area reserved for the snake game loop.</h2>
+          <h2>Snake game is ready to play.</h2>
         </div>
-        <div class="games-panel">
-          <p>
-            This section exists now so the future keyboard and mobile-touch game implementation
-            can plug in without changing the page structure.
-          </p>
-          <div class="games-placeholder" role="status" aria-live="polite">
-            Snake game implementation comes in a later loop.
+        <div class="games-panel" data-game-shell>
+          <div class="games-summary">
+            <p>
+              Use Arrow keys or W, A, S, D on desktop. On mobile, use the on-screen buttons or swipe on the game board.
+            </p>
+            <div class="game-stats" aria-live="polite">
+              <div><span>Score</span><strong data-score>0</strong></div>
+              <div><span>Best</span><strong data-best-score>0</strong></div>
+              <div><span>Status</span><strong data-status>Ready</strong></div>
+            </div>
+            <div class="game-actions">
+              <button class="button button-primary" type="button" data-start>Start</button>
+              <button class="button button-secondary" type="button" data-pause>Pause</button>
+              <button class="button button-secondary" type="button" data-restart>Restart</button>
+            </div>
+          </div>
+          <div class="game-board-wrap">
+            <canvas class="game-board" width="360" height="360" data-canvas aria-label="Snake game board" role="img"></canvas>
+            <p class="game-hint">Avoid walls and your own body. Eat the glowing food to grow.</p>
+          </div>
+          <div class="game-controls" aria-label="Mobile controls">
+            <button class="control control-up" type="button" data-dir="up" aria-label="Move up">↑</button>
+            <button class="control control-left" type="button" data-dir="left" aria-label="Move left">←</button>
+            <button class="control control-down" type="button" data-dir="down" aria-label="Move down">↓</button>
+            <button class="control control-right" type="button" data-dir="right" aria-label="Move right">→</button>
           </div>
         </div>
       </section>
